@@ -35,6 +35,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		520354FD2B221EC6007AE9DD /* Explore */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Explore;
+			sourceTree = "<group>";
+		};
 		52E5440F2B20C86200A68234 = {
 			isa = PBXGroup;
 			children = (
@@ -54,6 +61,7 @@
 		52E5441A2B20C86200A68234 /* LetsEat */ = {
 			isa = PBXGroup;
 			children = (
+				520354FD2B221EC6007AE9DD /* Explore */,
 				52E5441B2B20C86200A68234 /* AppDelegate.swift */,
 				52E5441D2B20C86200A68234 /* SceneDelegate.swift */,
 				52E544212B20C86200A68234 /* Main.storyboard */,
