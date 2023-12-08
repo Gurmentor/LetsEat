@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		52477D292B234E900005557D /* ExploreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52477D282B234E900005557D /* ExploreViewController.swift */; };
 		52E5441C2B20C86200A68234 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E5441B2B20C86200A68234 /* AppDelegate.swift */; };
 		52E5441E2B20C86200A68234 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E5441D2B20C86200A68234 /* SceneDelegate.swift */; };
 		52E544232B20C86200A68234 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52E544212B20C86200A68234 /* Main.storyboard */; };
@@ -15,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		52477D282B234E900005557D /* ExploreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreViewController.swift; sourceTree = "<group>"; };
 		52E544182B20C86200A68234 /* LetsEat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LetsEat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		52E5441B2B20C86200A68234 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		52E5441D2B20C86200A68234 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -38,6 +40,7 @@
 		520354FD2B221EC6007AE9DD /* Explore */ = {
 			isa = PBXGroup;
 			children = (
+				52477D282B234E900005557D /* ExploreViewController.swift */,
 			);
 			path = Explore;
 			sourceTree = "<group>";
@@ -145,6 +148,7 @@
 			files = (
 				52E5441C2B20C86200A68234 /* AppDelegate.swift in Sources */,
 				52E5441E2B20C86200A68234 /* SceneDelegate.swift in Sources */,
+				52477D292B234E900005557D /* ExploreViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
