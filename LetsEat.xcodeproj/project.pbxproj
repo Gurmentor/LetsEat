@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		522B102C2B2B3821005EED72 /* RestaurantListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 522B102B2B2B3821005EED72 /* RestaurantListViewController.swift */; };
 		52477D292B234E900005557D /* ExploreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52477D282B234E900005557D /* ExploreViewController.swift */; };
 		52E5441C2B20C86200A68234 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E5441B2B20C86200A68234 /* AppDelegate.swift */; };
 		52E5441E2B20C86200A68234 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E5441D2B20C86200A68234 /* SceneDelegate.swift */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		522B102B2B2B3821005EED72 /* RestaurantListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantListViewController.swift; sourceTree = "<group>"; };
 		52477D282B234E900005557D /* ExploreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreViewController.swift; sourceTree = "<group>"; };
 		52E544182B20C86200A68234 /* LetsEat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LetsEat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		52E5441B2B20C86200A68234 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -45,6 +47,14 @@
 			path = Explore;
 			sourceTree = "<group>";
 		};
+		522B102A2B2B37CA005EED72 /* Restaurants */ = {
+			isa = PBXGroup;
+			children = (
+				522B102B2B2B3821005EED72 /* RestaurantListViewController.swift */,
+			);
+			path = Restaurants;
+			sourceTree = "<group>";
+		};
 		52E5440F2B20C86200A68234 = {
 			isa = PBXGroup;
 			children = (
@@ -64,6 +74,7 @@
 		52E5441A2B20C86200A68234 /* LetsEat */ = {
 			isa = PBXGroup;
 			children = (
+				522B102A2B2B37CA005EED72 /* Restaurants */,
 				520354FD2B221EC6007AE9DD /* Explore */,
 				52E5441B2B20C86200A68234 /* AppDelegate.swift */,
 				52E5441D2B20C86200A68234 /* SceneDelegate.swift */,
@@ -147,6 +158,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				52E5441C2B20C86200A68234 /* AppDelegate.swift in Sources */,
+				522B102C2B2B3821005EED72 /* RestaurantListViewController.swift in Sources */,
 				52E5441E2B20C86200A68234 /* SceneDelegate.swift in Sources */,
 				52477D292B234E900005557D /* ExploreViewController.swift in Sources */,
 			);
