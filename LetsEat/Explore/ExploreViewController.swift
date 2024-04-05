@@ -15,21 +15,32 @@ class ExploreViewController: UIViewController, UICollectionViewDataSource, UICol
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        20
+        manager.numberOfExploreItems()
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "exploreCell", for: indexPath)
+        
+        // The cell that is dequeued is an instance of ExploreCell.
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "exploreCell", for: indexPath) as! ExploreCell
+        
+        // Get the ExploreItem instance that corresponds to this location in the collection view.
+        let exploreItem = manager.exploreItem(at: indexPath.row)
+        
+        cell.exploreNameLabel.text = exploreItem.name
+        cell.exploreImageView.image = UIImage(named: exploreItem.image!)
+        
         return cell
     }
     
 
     @IBOutlet var collectionView: UICollectionView!
-    
+    let manager = ExploreDataManager()
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        manager.fetch()
     }
     
     @IBAction func unwindLocationCancel(segue: UIStoryboardSegue){
