@@ -483,10 +483,10 @@
             </objects>
             <point key="canvasLocation" x="2890" y="424"/>
         </scene>
-        <!--View Controller-->
+        <!--Location View Controller-->
         <scene sceneID="6e6-89-LQg">
             <objects>
-                <viewController id="BJA-Pe-2jN" sceneMemberID="viewController">
+                <viewController id="BJA-Pe-2jN" customClass="LocationViewController" customModule="LetsEat" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="I7W-5Y-yxM">
                         <rect key="frame" x="0.0" y="0.0" width="430" height="922"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -513,6 +513,10 @@
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                 </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="BJA-Pe-2jN" id="6kD-VA-ZHX"/>
+                                    <outlet property="delegate" destination="BJA-Pe-2jN" id="F3d-pT-pby"/>
+                                </connections>
                             </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="qc0-3j-b1m"/>
@@ -532,6 +536,9 @@
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" systemItem="done" id="Ysd-fA-okm"/>
                     </navigationItem>
+                    <connections>
+                        <outlet property="tableView" destination="RUL-2V-iSb" id="cpp-VC-6Pq"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IDM-NE-Bdm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <exit id="ID2-38-mIV" userLabel="Exit" sceneMemberID="exit"/>
