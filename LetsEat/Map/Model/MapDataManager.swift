@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import MapKit
 
 class MapDataManager : DataManager {
     private var items: [RestaurantItem] = []
@@ -30,5 +31,14 @@ class MapDataManager : DataManager {
         }
         
         completion(items)
+    }
+    
+    func initialRegion(latDelta: CLLocationDegrees, longDelta: CLLocationDegrees) -> MKCoordinateRegion {
+        guard let item = items.first
+        else {
+            return MKCoordinateRegion()
+        }
+        let span = MKCoordinateSpan(latitudeDelta: latDelta, longitudeDelta: longDelta)
+        return MKCoordinateRegion(center: item.coordinate, span: span)
     }
 }
