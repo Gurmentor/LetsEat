@@ -22,15 +22,21 @@ class MapDataManager : DataManager {
 //    }
     
     func fetch(completion: (_ annotations:[RestaurantItem]) -> ()) {
-        if !items.isEmpty {
-            items.removeAll()
-        }
+        let manager = RestaurantDataManager()
+        manager.fetch(location: "Boston", compeltionHandler: {
+            (restaurantItems) in self.items = restaurantItems
+            completion(items)
+        })
         
-        for data in loadPlist(file: "MapLocations") {
-            items.append(RestaurantItem(dict: data))
-        }
-        
-        completion(items)
+//        if !items.isEmpty {
+//            items.removeAll()
+//        }
+//        
+//        for data in loadPlist(file: "MapLocations") {
+//            items.append(RestaurantItem(dict: data))
+//        }
+//        
+//        completion(items)
     }
     
     func initialRegion(latDelta: CLLocationDegrees, longDelta: CLLocationDegrees) -> MKCoordinateRegion {

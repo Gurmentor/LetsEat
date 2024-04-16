@@ -9,27 +9,16 @@ import UIKit
 import MapKit
 
 class RestaurantItem: NSObject, MKAnnotation, Decodable {
+    
     let name: String?
-    let cuisines : [String]
+    let cuisines: [String]
     let lat: Double?
     let long: Double?
     let address: String?
     let postalCode: String?
     let state: String?
     let imageURL: String?
-    let restaurant_ID: Int?
-    
-//    init(dict: [String:AnyObject]) {
-//        self.lat = dict["lat"] as? Double
-//        self.long = dict["long"] as? Double
-//        self.name = dict["name"] as? String
-//        self.cuisines = dict["cuisines"] as? [String] ?? []
-//        self.address =  dict["address"] as? String
-//        self.postalCode = dict["postalCode"] as? String
-//        self.state = dict["state"] as? String
-//        self.imageURL = dict["image_url"]  as? String
-//        self.restaurant_ID = dict["id"] as? Int
-//    }
+    let restaurantID: Int?
     
     enum CodingKeys: String, CodingKey {
         case name
