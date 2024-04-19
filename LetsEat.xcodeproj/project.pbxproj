@@ -39,6 +39,7 @@
 		52C384872BC5FD000059494F /* ReviewForm.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52C384862BC5FD000059494F /* ReviewForm.storyboard */; };
 		52C384892BC5FD100059494F /* PhotoFilter.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52C384882BC5FD100059494F /* PhotoFilter.storyboard */; };
 		52C3848B2BC600580059494F /* Segue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C3848A2BC600580059494F /* Segue.swift */; };
+		52C9346C2BD0276000F7A0ED /* LocationItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C9346B2BD0276000F7A0ED /* LocationItem.swift */; };
 		52D467E82BC02EEB00A7CB62 /* ExploreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D467E72BC02EEB00A7CB62 /* ExploreDataManager.swift */; };
 		52D467EB2BC0441600A7CB62 /* ExploreCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D467EA2BC0441600A7CB62 /* ExploreCell.swift */; };
 		52E5441C2B20C86200A68234 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E5441B2B20C86200A68234 /* AppDelegate.swift */; };
@@ -81,6 +82,7 @@
 		52C384862BC5FD000059494F /* ReviewForm.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ReviewForm.storyboard; sourceTree = "<group>"; };
 		52C384882BC5FD100059494F /* PhotoFilter.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = PhotoFilter.storyboard; sourceTree = "<group>"; };
 		52C3848A2BC600580059494F /* Segue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Segue.swift; sourceTree = "<group>"; };
+		52C9346B2BD0276000F7A0ED /* LocationItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationItem.swift; sourceTree = "<group>"; };
 		52D467E72BC02EEB00A7CB62 /* ExploreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreDataManager.swift; sourceTree = "<group>"; };
 		52D467EA2BC0441600A7CB62 /* ExploreCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreCell.swift; sourceTree = "<group>"; };
 		52E544182B20C86200A68234 /* LetsEat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LetsEat.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -212,6 +214,7 @@
 				52B4DFC32BC2F1FD00C36EA9 /* Locations.plist */,
 				52B4DFC52BC2F3FF00C36EA9 /* LocationDataManager.swift */,
 				529F85162BC4446400072B66 /* RestaurantItem.swift */,
+				52C9346B2BD0276000F7A0ED /* LocationItem.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -377,6 +380,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				52C9346C2BD0276000F7A0ED /* LocationItem.swift in Sources */,
 				52263F7B2BBF3CA600B02A0C /* ExploreItem.swift in Sources */,
 				5209E51A2BC4919500E89130 /* DataManager.swift in Sources */,
 				5209E5172BC48CED00E89130 /* MapDataManager.swift in Sources */,
